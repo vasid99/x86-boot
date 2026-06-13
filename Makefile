@@ -14,4 +14,4 @@ $(OUT_DIR)/kernel.bin: $(SRC_DIR)/kernel.asm
 	$(NASM) -f bin -o $@ $^
 
 run:
-	qemu-system-x86_64 --help
+	qemu-system-x86_64 -drive file=$(OUT_DIR)/kernel.bin,format=raw
