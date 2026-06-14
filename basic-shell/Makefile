@@ -4,7 +4,7 @@ USR_DIR ?= .
 SRC_DIR := $(USR_DIR)/src
 OUT_DIR := $(USR_DIR)/output
 
-all: clean $(OUT_DIR)/kernel.bin
+all: $(OUT_DIR)/kernel.bin
 
 clean:
 	rm -rf $(OUT_DIR)
